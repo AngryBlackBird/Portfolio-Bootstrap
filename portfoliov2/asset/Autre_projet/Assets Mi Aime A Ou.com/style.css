@@ -1,0 +1,725 @@
+*{
+    font-family: Helvetica, sans-serif;
+    
+}
+
+body{
+	background-color: #fff1d7;
+}
+/* header */
+
+header
+{
+    display: flex;
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: 1;   
+}
+
+.nav
+{
+    width: auto;
+   
+}
+
+.menu
+{
+	display: flex;
+    width: auto ;
+}
+
+.nav a
+{
+    padding: 1em;
+    display: block;
+    text-align:center;
+    text-decoration: none;
+    display: block;
+    color: black;
+    border-bottom: 2px solid transparent;
+    border-left: 0px;
+  
+}
+
+nav a:hover
+{
+    color: orange;
+    border-bottom: 2px solid gold;
+    border-left: 0px;
+}
+
+.logo img
+{
+    justify-content:  center;
+    max-height: 100px;
+}
+
+
+
+ul
+{
+    list-style: none;
+}
+
+
+.déroulant 
+{ 
+    position: relative;
+    
+}
+
+.deroulant2 
+{
+    position: relative;
+}
+
+.déroulant:hover > .sous-menu
+{
+    display: flex; 
+}
+
+.deroulant2:hover > .sous-menu2
+{
+    display: flex;
+}
+
+
+.sous-menu
+{
+    display: none;
+    flex-flow: column wrap;
+    min-width:200px;
+    position: absolute;
+    text-align: left;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    z-index: 1000; 
+}
+.sous-menu a 
+{
+    text-align: left;
+    color:black;
+    
+}
+
+.deroulant2 .sous-menu2
+{
+    display: none;
+    flex-flow: column;
+    top: 0px;
+    min-width: 150px;
+    left: 100%;
+    position: absolute;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    z-index: 1001;
+}
+
+.déroulant > a::after
+{
+    content:" ▼";
+    font-size: 12px;
+}
+
+
+/*hamb*/
+
+.hamb_nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    display: none;
+    
+    
+}
+.hamb_menu {
+    margin: 0 30px 0 0;
+}
+.hamb_menu a {
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    
+}
+#toggle {
+    display: none;
+}
+
+
+
+/* css bannière */
+
+
+#banniere
+{
+    background-image: url(images_site/transat.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: auto;
+}
+
+.btn 
+{
+    width: 20%;
+    font-size: 25px;
+    background-color: #fefac0;
+    color: goldenrod;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.btn a
+{
+	text-decoration: none;
+	color: goldenrod;
+}
+
+h1
+{
+    font-family: aladin-regular;
+    text-shadow: 5px 5px 5px black;
+    font-size: 80px;
+    margin-left: 5%;
+}
+
+p
+{
+    font-family: helvetica;
+    font-size: 20px;
+    margin-left: 5%;
+    text-shadow: 2px 2px 2px black;
+    color: black;
+}
+
+/* search */
+
+#buscar
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #fff1d7;
+}
+
+#buscar input
+{
+    width: 100%;
+    justify-content: center;
+    border-radius: 32px;
+    height: 50px;
+    background-color: white;
+}
+
+
+/*Liens Photos*/
+
+.zone1 
+{
+    display: flex;
+    justify-content: space-between center;
+    width: 100%;
+
+}
+
+.zone1 .description_image1 
+{
+    background-image: url(images_site/photo_x6/tortue.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.zone1 .description_image2 
+{
+    background-image: url(images_site/photo_x6/seloger.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.zone1 .description_image3 
+{
+    background-image: url(images_site/photo_x6/Carte.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.zone2 .description_image1 
+{
+    background-image: url(images_site/photo_x6/Arbre.png);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.zone2 .description_image2 
+{
+    background-image: url(images_site/photo_x6/Cameleon.png);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.zone2 .description_image3 
+{
+    background-image: url(images_site/photo_x6/Paysage_0.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.description_image1 a 
+{
+    display: flex;
+    font-family: georgia, serif;
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.description_image2 a 
+{
+    display: flex;
+    font-family: georgia, serif;
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.description_image3 a 
+{
+    display: flex;
+    font-family: georgia, serif;
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+.zone2 
+{
+    display: flex;
+    justify-content: space-between center;
+}
+
+.description_image 
+{
+    display: flex;
+    text-align: center;
+}
+
+/* texte boutton entre zone 2 et zone 3 */
+
+#Texte_boutton
+{
+	text-align: center;
+
+}
+
+#Texte_boutton input
+{
+    color: goldenrod;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 2%;
+}
+
+/*Zone 3 photos liens*/
+
+#photo1 
+{
+    display: flex;
+    background-image: url(images_site/photo_x3/Paysage_1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: georgia, serif;
+    font-weight: bold;
+    flex-direction: column;
+    text-shadow: 2px 2px 3px black;
+    align-items: flex-start;
+
+}
+
+#photo2 
+{
+    display: flex;
+    background-image: url(images_site/photo_x3/tortue2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: georgia, serif;
+    font-weight: bold;
+    flex-direction: column;
+    text-shadow: 2px 2px 3px black;
+    align-items: flex-start;
+}
+
+#photo3 
+{
+    display: flex;
+    background-image: url(images_site/photo_x3/Paysage_2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: georgia, serif;
+    font-weight: bold;
+    flex-direction: column;
+    text-shadow: 2px 2px 3px black;
+    align-items: flex-start;
+}
+
+#photo1 h2 
+{
+    padding-top: 20%;
+    font-size: 200%;
+}
+
+#photo2 h2 
+{
+    padding-top: 18%;
+    font-size: 200%;
+}
+
+#photo3 h2 
+{
+    padding-top: 20%;
+    font-size: 200%;
+}
+
+#photo1 input 
+{
+    font-size: 20px;
+    background-color: #fefac0;
+    text-decoration: none;
+    color: goldenrod;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+#photo2 input 
+{
+    font-size: 20px;
+    background-color: #fefac0;
+    text-decoration: none;
+    color: goldenrod;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 40px;
+
+}
+
+#photo3 input 
+{
+    font-size: 20px;
+    background-color: #fefac0;
+    text-decoration: none;
+    color: goldenrod;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* Footer */
+
+footer
+{
+	display: flex;
+	flex-direction: row;
+	background-color: #fefac0;
+
+}
+
+#footergauche
+{
+	padding: 3%;
+	width: auto;
+}
+
+img#avis
+{
+	justify-content: center;
+    align-items: flex-start;
+    width: 20%;
+    height: auto;
+    margin-left: 5%;
+}
+a#Avis
+{
+	margin-left: 5%
+}
+
+img#Logo
+{
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+}
+
+#footercentre
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 3%;
+	width: auto;
+}
+
+img#facebook
+{
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: auto;
+}
+
+img#instagram
+{
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: auto;
+}
+
+img#twitter
+{
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: auto;
+}
+
+#footerdroit
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 3%;
+	width: auto;
+}
+
+#footerdroit a 
+{
+	text-decoration: none;
+	color: goldenrod;
+}
+
+#footergauche a 
+{
+	text-decoration: none;
+	color: goldenrod;
+}
+
+#footercentre a 
+{
+	text-decoration: none;
+	color: goldenrod;
+}
+
+@media screen and (max-width: 800px){
+
+	header{
+		position: relative;
+		justify-content: center;
+	}
+	.menu{
+		display: block;
+		text-align: center;
+	}
+
+	.deroulant2 .sous-menu2{
+		position: relative;
+		left: auto;
+	}
+
+	.logo img {
+        max-height: 50px ;
+    }
+	
+	h1{
+		font-size: 50px;
+	}
+
+	.btn {
+		font-size: 15px;
+	}
+
+	.btn a{
+		font-size: 10px;
+	}
+
+	div.zone1{
+		display: block;
+
+	}
+
+	div.zone2{
+		display: block;
+
+	}
+
+	div.zone3{
+		display: block;
+	}
+
+	#Text_boutton {
+		font-size: 5px;
+	}
+
+	#zone3{
+		display: block;
+	}
+
+	#photo1 input{
+		font-size: 70%;
+	}
+
+	#photo2 input{
+		font-size: 70%;
+	}
+
+	#photo3 input{
+		font-size: 70%;
+	}
+
+	footer{
+		display: block;
+		width: auto;
+	}
+
+/*hamb*/
+.nav{
+    display: none;
+}
+
+.hamb_nav{
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    
+}
+.hamb_menu {
+    text-align: right;
+    width: 100%;
+    display: none;
+    text-align: center;
+    background-color: #fff1d7;
+   
+}
+.hamb_menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+ 
+}
+#toggle:checked + .hamb_menu {
+    display: block;
+}
+
+img{
+    max-height: 50px;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 1100px){
+
+	header{
+        justify-content: space-between;
+        width: 100%;
+       
+    }
+    .nav{
+        width: 100%;
+        
+    }
+    .menu{
+        justify-content: space-around;
+    }
+    
+}

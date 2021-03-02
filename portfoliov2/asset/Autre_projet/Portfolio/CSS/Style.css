@@ -1,0 +1,119 @@
+
+Body{
+    width: 1920px; 
+    background-image: url(Fond.jpg);
+    background-color: black;
+    background-size:auto;
+    background-repeat: no-repeat
+        
+}
+
+
+header{ width: 1910px; /* On a indiqué une largeur (obligatoire) */
+    height: 100px;
+    margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */
+    text-align: justify;
+    padding: 5px;
+    margin-left: -8px;
+    margin-top: -10px;
+    background-color: whitesmoke;
+
+}
+
+header div ul {
+ padding:0;
+ margin:0;
+
+ }
+header div ul li {
+ margin-left:0px;
+ float:left; /*pour IE*/
+ }
+
+header div ul li p {
+ display:block;
+ float:left;   
+ width:200px;
+ background-color:gainsboro;
+ color:brown;
+ text-align:center;
+ padding:5px;
+ border:2px solid;
+ border-color:aliceblue;
+ margin-left: 300px
+ }
+
+
+.introduction {
+    color: crimson;
+    width:800px;
+    font-size: 30px;
+    margin-left: 600px;
+    font-family: Snell Roundhand;
+}
+
+
+.compétences {
+    
+    border-collapse: collapse;
+    margin-left: 1750px;
+    float:left;   
+    width:100px;
+    background-color:#6495ED;
+    color:black;
+    text-align:center;
+    padding:5px;
+    border:2px solid;
+    border-color:#DCDCDC #696969 #696969 #DCDCDC
+}
+
+.social {
+    
+        margin-top: -220px;
+
+}
+
+.social img{
+    width : 4%; 
+    margin-top: -100px;
+
+}
+
+
+.information{
+    
+    margin-top: -350px;
+    margin-left: 450px;
+ 
+        
+}
+
+.image1 {
+     width : 15%; 
+    margin-top: -100px;
+}
+
+
+.rectangle{
+    width: 300px;
+    height : 500px; 
+    background: white; 
+    margin-top: 450px ;
+    margin-left: 400px;
+    border-width : 5px;
+    border-style :groove;
+    border-color : bisque;
+    padding : 
+
+    
+}
+
+.youtube{
+    
+    margin-top: 300px;
+    margin-left: 200px;
+}
+
+footer{
+    margin-top: 500px;
+}

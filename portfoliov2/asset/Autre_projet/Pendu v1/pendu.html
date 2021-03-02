@@ -1,0 +1,89 @@
+
+<!DOCTYPE html5>
+
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<title>Jeu de pendu en Javascipt</title>
+		<link rel=Stylesheet type="text/css" href=stylePendu.css>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+	</head>
+
+	
+
+<body>
+
+
+<center>
+<div id="page">
+	
+	<img name="pendu" class="pendu" src="images/pendu_0.jpg">
+	
+	<h1>Qui veut prendre sa place?</h1>
+
+	<h2>Essayez de survivre, trouvez le bon mot, trop d'erreurs et vous finirez à la potence !</h2>
+	
+	<table id="clavier">
+	 <tr>
+	  <td onclick="proposer(this);" >A</td>
+	  <td onclick="proposer(this);" >Z</td>
+	  <td onclick="proposer(this);" >E</td>
+	  <td onclick="proposer(this);" >R</td>
+	  <td onclick="proposer(this);" >T</td>
+	  <td onclick="proposer(this);" >Y</td>
+	  <td onclick="proposer(this);" >U</td>
+	  <td onclick="proposer(this);" >I</td>
+	  <td onclick="proposer(this);" >O</td>
+	  <td onclick="proposer(this);" >P</td>
+	 </tr>
+	 <tr>
+	  <td onclick="proposer(this);" >Q</td>
+	  <td onclick="proposer(this);" >S</td>
+	  <td onclick="proposer(this);" >D</td>
+	  <td onclick="proposer(this);" >F</td>
+	  <td onclick="proposer(this);" >G</td>
+	  <td onclick="proposer(this);" >H</td>
+	  <td onclick="proposer(this);" >J</td>
+	  <td onclick="proposer(this);" >K</td>
+	  <td onclick="proposer(this);" >L</td>
+	  <td onclick="proposer(this);" >M</td>
+	 </tr>
+	 <tr>
+	  <td onclick="proposer(this);" >W</td>
+	  <td onclick="proposer(this);" >X</td>
+	  <td onclick="proposer(this);" >C</td>
+	  <td onclick="proposer(this);" >V</td>
+	  <td onclick="proposer(this);" >B</td>
+	  <td onclick="proposer(this);" >N</td>
+	 </tr>
+	</table>
+	<br>
+    <div id= "decompte"></div>
+    <script type="text/javascript" src="Pendujava.js"></script>
+	
+		
+    <input type="text" id="input" name="input" value="">
+	<input type="button" id="button" value="Contr�ler" onclick="controleText()">
+	
+	<br> <a class="lien" href="javascript:location.reload();">Nouvelle partie</a> </br>
+	
+	<table id="mot">
+		<tr>
+			<script language="javascript">
+				for(var i=0; i<tailleMot; i++) document.write("<td> <p id=\""+i+"\">"+motSecret.charAt(i)+"</p></td>");
+			</script>
+		</tr>
+	</table>
+	
+	<script language="javascript">
+		for(var i=0; i<tailleMot; i++) tableauMot[i]=document.getElementById(i);
+	</script>
+ 
+    
+</div>
+</center>  
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+
+body{
+    background-image: url(images/fond.jpg);
+    font-family:'Schoolbell', cursive;
+    color: #FFFFFF;
+    
+}
+
+#page {
+	/* Boîte contenant le jeu */
+    background color: grey     
+    }
+
+h1 {
+    /* Titre "Qui veut prendre sa place" */
+	text-align: center;
+    font-size:40px;
+    
+}
+
+img.pendu {
+    /* Alignement image */
+	border-right: 10px;
+    width: 10.2%;
+    
+}
+
+h2 {
+	/* Slogan du jeu */
+    font-size:16px;
+    text-align: center;
+}
+
+#mot {
+	margin:100px 0 0 0;
+	clear:both;
+	top:100px;
+}
+
+#mot td {
+	/* Cases du mot recherché */
+    padding:10px;
+	background-color: #CCCCCC;
+	border:1px inset black;
+	width:30px;
+	height:30px;
+	font-weight:bold;
+	font-size:1.5em;
+	text-align:center;
+}
+
+ #mot p{
+	visibility:hidden;
+	color: black;
+}
+
+#clavier{
+	/* Fond du clavier */
+    border:4px outset white;
+	background-color: black;
+    color: black;
+    right: 100px;
+    top: : 100px; 
+}
+
+#clavier td {
+	/* Touches du clavier */
+    background-color: #CCCCCC;
+	border:1px solid white;
+	width:75px;
+	height:75px;
+	text-align:center;
+    cursor:pointer
+    }
+
+a.lien{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:20px;
+}
+
+a.lien:hover{
+	color:black;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+#decompte { 
+	margin-top: 0px;
+}
+
+#input {
+		margin-left: 10px; 
+}
+#button {
+		margin-left: 10px; 
+}
+
